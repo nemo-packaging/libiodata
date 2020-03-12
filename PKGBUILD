@@ -30,9 +30,9 @@ prepare() {
 
 build() {
 	cd "$srcdir/$_pkgname"
-    export IODATA_VERSION=0.19.9
+    export IODATA_VERSION=0.19.10
     qmake
-    make
+    make -j1
 }
 
 package() {

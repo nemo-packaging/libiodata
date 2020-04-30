@@ -19,7 +19,7 @@ pkgdesc="Mer library for input/output data"
 arch=('x86_64' 'aarch64')
 url="https://$_host/$_project/$_gitname#branch=$_branch"
 license=('LGPL-2.1-or-later')
-depends=('qt5-base' 'dbus')
+depends=('qt5-base')
 makedepends=('git' 'bison' 'flex')
 provides=("${pkgname%-git}")
 conflicts=("${pkgname%-git}")
